@@ -1,0 +1,306 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem; /* Usar rem para responsividade */
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+/* Estilos do Cabeçalho */
+#header {
+  background: linear-gradient(135deg, #630d94 0%, #a76dff 100%); /* Gradiente de fundo */
+  color: #ffffff; /* Cor do texto */
+  padding: 40px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+  position: relative; /* Para posicionamento do elemento do contador */
+  overflow: hidden; /* Para esconder qualquer conteúdo que ultrapasse */
+}
+
+
+
+
+#countdown {
+  display: flex; /* Flexbox para layout horizontal */
+  justify-content: center; /* Centraliza os itens */
+  align-items: center; /* Alinha verticalmente os itens */
+  gap: px; /* Espaçamento entre os itens */
+  font-size: 1.5em; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilos das Caixas do Tempo */
+
+
+
+
+/* Estilos do Separador */
+.separator {
+  font-size: 1.5em; /* Tamanho do separador */
+  color: #ffffff; /* Cor do texto do separador */
+  margin: 0 10px; /* Margem nos lados do separador */
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Move o elemento para cima */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Move o elemento para sua posição original */
+  }
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px); /* Efeito de bounce */
+  }
+}
+
+
+/* Estilos do Label */
+.label {
+  font-size: 0.75em; /* Tamanho da fonte */
+  color: #555; /* Cor do texto */
+  margin-top: 5px; /* Margem acima do label */
+  display: block; /* Exibe como bloco */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Usar rem para responsividade */
+  margin-bottom: 1rem; /* Usar rem para responsividade */
+}
+
+.time-box {
+  background-color: #ffffff;
+  color: #630d94;
+  padding: 1rem; /* Usar rem para responsividade */
+  border-radius: 5px;
+  font-size: 1.5rem; /* Usar rem para responsividade */
+  min-width: 60px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.label {
+  font-size: 0.87rem;
+  color: #630d94;
+  margin-top: 0.5rem; /* Usar rem para responsividade */
+}
+
+/* Seção de Hero */
+#hero {
+  background-color: #ffffff;
+  padding: 2rem; /* Usar rem para responsividade */
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem; /* Usar rem para responsividade */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#hero h2 {
+  font-size: 2rem; /* Usar rem para responsividade */
+  color: #630d94;
+  margin-bottom: 1rem; /* Usar rem para responsividade */
+}
+
+#hero p {
+  font-size: 1rem; /* Usar rem para responsividade */
+  color: #555;
+  margin-bottom: 2rem; /* Usar rem para responsividade */
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Seção de Possibilidades */
+#possibilities {
+ 
+  justify-content: center;
+  background-color: #ffffff; 
+  padding: 2rem; /* Usar rem para responsividade */
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 2rem; /* Usar rem para responsividade */
+}
+
+#possibilities h2 {
+  font-size: 2rem; 
+  color: #630d94; 
+  margin-bottom: 1.5rem; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+#possibilities ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  list-style-type: none; 
+  padding: 0; 
+}
+
+#possibilities li {
+  background-color: #f4f4f4; 
+  padding: 1.5rem; /* Usar rem para responsividade */
+  margin-bottom: 1.5rem; 
+  border-radius: 8px; 
+  font-size: 1.1em; 
+  color: #333333; 
+  display: flex; 
+  flex-direction: column;
+  transition: background-color 0.3s ease; 
+}
+
+#possibilities li:hover {
+  background-color: #e0e0e0; 
+}
+
+#possibilities li strong {
+  color: #630d94; 
+  margin-right: 1rem; 
+  font-weight: bold; 
+  font-size: 1.1em; 
+}
+
+/* Seção de CTA */
+#cta {
+  background-color: #630d94;
+  color: #ffffff;
+  padding: 2rem; /* Usar rem para responsividade */
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem; /* Usar rem para responsividade */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#cta h2 {
+  font-size: 2rem; 
+  margin-bottom: 1.5rem; 
+}
+
+#cta p {
+  font-size: 1.2rem; 
+  margin-bottom: 2rem; 
+}
+
+#cta form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cta input {
+  padding: 1rem; /* Usar rem para responsividade */
+  margin-bottom: 1.5rem; 
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#cta button {
+  background-color: #ffffff;
+  color: #630d94;
+  padding: 1rem 1.5rem; /* Usar rem para responsividade */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem; 
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+  transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+#cta button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Seção de Depoimentos */
+#testimonials {
+  background-color: #ffffff;
+  padding: 2rem; /* Usar rem para responsividade */
+  border-radius: 10px;
+  margin-bottom: 2rem; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#testimonials h2 {
+  font-size: 1.5rem; 
+  color: #630d94;
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 1.5rem; /* Usar rem para responsividade */
+  border-radius: 5px;
+  margin-bottom: 1.5rem; 
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial cite {
+  display: block;
+  text-align: right;
+  color: #630d94;
+  margin-top: 0.5rem; 
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem; /* Usar rem para responsividade */
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Estilo dos Emojis */
+.emoji {
+  font-size: 1.5rem; /* Tamanho do emoji */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem; /* Usar rem para responsividade */
+  }
+
+  h1, h2 {
+    font-size: 1.6rem; /* Usar rem para responsividade */
+  }
+
+  p, li, button, input {
+    font-size: 1rem; /* Usar rem para responsividade */
+  }
+}
+ul img{
+  width: 100px;
+
+}
